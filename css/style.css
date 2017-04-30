@@ -1,0 +1,46 @@
+#logo img {
+	max-width: 100%;
+	text-align: center;
+}
+
+#logo {
+	width: 300px;
+	margin: 0 auto;
+}
+
+#post-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
+.ui-grid-a img {
+	max-width: 100%;
+    height : auto;
+}
+
+#videos img {
+	height: 90%;
+	margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+   #video iframe {
+	   width: 530px;
+	   height: 298px;
+   }
+}
+
+@media (max-width: 480px) {
+   #video iframe {
+	   height: 225px;
+	   width: 400px;
+   }
+}
+
+@media (max-width: 360px) {
+   #video iframe {
+	   height: 169px;
+	   width: 300px;
+   }
+}
+

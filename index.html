@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sk.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script src="scripts/script.js"></script> 
+
+<title>Twoja Forma !</title>
+
+</head>
+
+<body>
+	<!-- Start poczatek -->
+	<div id="home" data-role="page" data-title="Start">
+    	<div data-role="header">
+        	<h1>Start</h1>
+        </div>
+        <div data-role="content">
+    		<div id="logo"><img src="images/logo.png" alt=""></div>
+            <div data-role="controlgroup" data-type="vertical">
+        		<a href="#treningPlan" data-role="button">Plan Treningu</a>
+        		<a href="#activity" data-role="button">Aktywności</a>
+        		<a href="#foods" data-role="button">Posiłki</a>
+                <a href="#progress" data-role="button">Postępy</a>
+
+            </div>
+            
+        </div>
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="content">
+            	<p><a href="#authorInfo" data-icon="info" data-role="button" class="ui-btn-left" data-rel="dialog" data-theme="b">Informacje o autorach</a></p>
+            </div>
+        </div>
+
+    </div>
+	<!--  Start koniec -->
+	
+    <!-- Plan Treningu poczatek -->
+    <div id="treningPlan" data-role="page" data-title="Plan Treningu">
+    	<div data-role="header">
+        	<h1>Plan Treningu</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+        </div>
+        <div data-role="content">
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="navbar">
+            	<ul>
+                	<li><a href="#treningPlan" data-icon="arrow-r" data-theme="b">Plan Treningu</a></li>
+                    <li><a href="#activity" data-icon="arrow-r" data-theme="b">Aktywności</a></li>
+                    <li><a href="#foods" data-icon="arrow-r" data-theme="b">Posiłki</a></li>
+                    <li><a href="#progress" data-icon="arrow-r" data-theme="b">Postępy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<!-- Plan Treningu koniec-->
+	
+    <!-- Aktywności poczatek -->
+    <div id="activity" data-role="page" data-title="Aktywności">
+    	<div data-role="header">
+        	<h1>Aktywności</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+        </div>
+        <div data-role="content">
+	<!--  table-stripe /  -->
+        	<table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+            	<thead class="ui-bar-d">
+       				<tr>
+                        <th data-priority="3">ID</th>
+                        <th data-priority="1">Aktywność</th>
+                        <th data-priority="1">Kcal/h</th>
+                        <th data-priority="2">Kategoria</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                    	<td>1</td>
+                        <td>Jazda na rolkach</td>
+                        <td>588</td>
+                        <td>Kardio</td>
+                    </tr>
+                    <tr>
+                    	<td>2</td>
+                        <td>Bieg interwałowy</td>
+                        <td>1560</td>
+                        <td>Kardio</td>
+                    </tr>
+                    <tr>
+                    	<td>3</td>
+                        <td>Bieg normalny</td>
+                        <td>1260</td>
+                        <td>Wytrzymałościowy</td>
+                    </tr>
+                    <tr>
+                    	<td>4</td>
+                        <td>Trucht</td>
+                        <td>672</td>
+                        <td>Kardio</td>
+                    </tr>
+                    <tr>
+                    	<td>5</td>
+                        <td>Siłownia</td>
+                        <td>588</td>
+                        <td>Siłowy</td>
+                    </tr>
+                    <tr>
+                    	<td>6</td>
+                        <td>Skakanka</td>
+                        <td>688</td>
+                        <td>Wytrzymałościowy</td>
+                    </tr>
+                </tbody>
+            </table>
+		
+		
+		
+		
+		
+		
+        	
+        </div>
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="navbar">
+            	<ul>
+                	<li><a href="#treningPlan" data-icon="arrow-r" data-theme="b">Plan Treningu</a></li>
+                    <li><a href="#activity" data-icon="arrow-r" data-theme="b">Aktywności</a></li>
+                    <li><a href="#foods" data-icon="arrow-r" data-theme="b">Posiłki</a></li>
+                    <li><a href="#progress" data-icon="arrow-r" data-theme="b">Postępy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Aktywności koniec-->
+	
+    <!-- Posiłki poczatek -->
+	    <div id="foods" data-role="page" data-title="Posiłki">
+    	<div data-role="header">
+
+        	<h1>Posiłki</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+        </div>
+        <div data-role="content">
+			                <label for="date">Data:</label>
+							<input type="date" id="date" name="date" />
+        	
+        </div>
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="navbar">
+            	<ul>
+                	<li><a href="#treningPlan" data-icon="arrow-r" data-theme="b">Plan Treningu</a></li>
+                    <li><a href="#activity" data-icon="arrow-r" data-theme="b">Aktywności</a></li>
+                    <li><a href="#foods" data-icon="arrow-r" data-theme="b">Posiłki</a></li>
+                    <li><a href="#progress" data-icon="arrow-r" data-theme="b">Postępy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<!-- Posiłki koniec-->
+    
+
+	
+    <!-- Postępy poczatek -->
+    <div id="progress" data-role="page" data-title="Postępy">
+    	<div data-role="header">
+        	<h1>Postępy</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+        </div>
+        <!--  formularz zamowienia -->
+        <div data-role="content">
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="navbar">
+            	<ul>
+                	<li><a href="#treningPlan" data-icon="arrow-r" data-theme="b">Plan Treningu</a></li>
+                    <li><a href="#activity" data-icon="arrow-r" data-theme="b">Aktywności</a></li>
+                    <li><a href="#foods" data-icon="arrow-r" data-theme="b">Posiłki</a></li>
+                    <li><a href="#progress" data-icon="arrow-r" data-theme="b">Postępy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<!-- Postępy koniec-->
+    
+    <!--  Informacje o autorach  -->
+    
+    <div id="authorInfo" data-role="page" data-title="Autorzy"><!-- unstawienia intro poczatek -->
+    	<div data-role="header">
+        	<h1>Autorzy</h1>
+        </div>
+        <div data-role="content">
+        	
+        	<p>Mateusz Dziedzina</p>
+			<p>Marcin Feliks</p>
+
+            <a href="#home" data-role="button">Koniec</a>
+        </div>
+        
+    </div>
+	<!-- Informacje o autorach koniec-->
+    
+</body>
+
+</html>
